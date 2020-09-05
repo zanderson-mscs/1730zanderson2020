@@ -148,6 +148,7 @@
             this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.lblSubtotal);
             this.Name = "frmInvoice";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invoice Total";
             this.ResumeLayout(false);
             this.PerformLayout();
