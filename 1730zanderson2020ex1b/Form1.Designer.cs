@@ -55,6 +55,7 @@
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(100, 22);
             this.txtSubtotal.TabIndex = 1;
+            this.txtSubtotal.Text = "0";
             this.txtSubtotal.TextChanged += new System.EventHandler(this.txtSubtotal_TextChanged);
             // 
             // lblDiscountPercent
@@ -72,6 +73,7 @@
             this.txtDiscountPercent.Name = "txtDiscountPercent";
             this.txtDiscountPercent.Size = new System.Drawing.Size(100, 22);
             this.txtDiscountPercent.TabIndex = 3;
+            this.txtDiscountPercent.Text = "5";
             // 
             // lblDiscountAmount
             // 
@@ -129,6 +131,7 @@
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmInvoice
             // 
