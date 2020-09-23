@@ -128,6 +128,7 @@ namespace _1730zanderson1f
                 ).ToString("0.00");
 
             lblEquation.Text = lblEquation.Text + " + " + txtTotalUSD.Text;
+            txtAmount.Focus();
 
         }
 
