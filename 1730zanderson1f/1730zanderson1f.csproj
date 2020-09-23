@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4061C120-BD17-4930-B613-3E777E5461EE}</ProjectGuid>
+    <ProjectGuid>{8C4D36F5-4455-4A5D-9151-B43ADD060A4B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_1730zanderson2020ex1e</RootNamespace>
-    <AssemblyName>1730zanderson2020ex1e</AssemblyName>
+    <RootNamespace>_1730zanderson1f</RootNamespace>
+    <AssemblyName>1730zanderson1f</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmTestAvg.cs">
+    <Compile Include="frmCurrencyV2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTestAvg.Designer.cs">
-      <DependentUpon>FrmTestAvg.cs</DependentUpon>
+    <Compile Include="frmCurrencyV2.Designer.cs">
+      <DependentUpon>frmCurrencyV2.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmTestAvg.resx">
-      <DependentUpon>FrmTestAvg.cs</DependentUpon>
+    <EmbeddedResource Include="frmCurrencyV2.resx">
+      <DependentUpon>frmCurrencyV2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +78,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="flags\Australia-Flag-icon.png" />
+    <Content Include="flags\Australia-Flag-iconDimmed.png" />
+    <Content Include="flags\Brazil-Flag-icon.png" />
+    <Content Include="flags\Brazil-Flag-iconDimmed.png" />
+    <Content Include="flags\France-Flag-icon.png" />
+    <Content Include="flags\France-Flag-iconDimmed.png" />
+    <Content Include="flags\Mozambique-Flag-icon.png" />
+    <Content Include="flags\Mozambique-Flag-iconDimmed.png" />
+    <Content Include="flags\United-States-Flag-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
