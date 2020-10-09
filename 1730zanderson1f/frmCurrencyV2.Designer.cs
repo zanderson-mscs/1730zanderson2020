@@ -189,7 +189,7 @@
             // btnBrazil
             // 
             this.btnBrazil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBrazil.Location = new System.Drawing.Point(205, 31);
+            this.btnBrazil.Location = new System.Drawing.Point(213, 31);
             this.btnBrazil.Name = "btnBrazil";
             this.btnBrazil.Size = new System.Drawing.Size(161, 85);
             this.btnBrazil.TabIndex = 1;
@@ -319,7 +319,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(755, 327);
+            this.ClientSize = new System.Drawing.Size(747, 322);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnadd);

@@ -59,23 +59,17 @@ namespace _1730zanderson1d
 
         private void BrazilTextChanged(object sender, EventArgs e)
         {
-            txtUSDBrazil.Text = (
-            (Convert.ToDecimal(txtAmountBrazil.Text)) * (Convert.ToDecimal(txtRateBrazil.Text))
-             ).ToString("0.00");
+
         }
 
         private void FranceTextChanged(object sender, EventArgs e)
         {
-            txtUSDFrance.Text = (
-            (Convert.ToDecimal(txtAmountFrance.Text)) * (Convert.ToDecimal(txtRateFrance.Text))
-             ).ToString("0.00");
+
         }
 
         private void MozambiqueTextChanged(object sender, EventArgs e)
         {
-            txtUSDMozambique.Text = (
-            (Convert.ToDecimal(txtAmountMozambique.Text)) * (Convert.ToDecimal(txtRateMozambique.Text))
-             ).ToString("0.00");
+
         }
 
         private void txtUSDTextChanged(object sender, EventArgs e)
@@ -86,6 +80,11 @@ namespace _1730zanderson1d
              Convert.ToDecimal(txtUSDFrance.Text) +
              Convert.ToDecimal(txtUSDMozambique.Text) 
              ).ToString("0.00");
+        }
+
+        private void calculate(object sender, EventArgs e)
+        {
+
         }
     }
 }

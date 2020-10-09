@@ -253,7 +253,7 @@
             this.txtRateMozambique.TabIndex = 9;
             this.txtRateMozambique.Text = "0.0139615";
             this.txtRateMozambique.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtRateMozambique.TextChanged += new System.EventHandler(this.MozambiqueTextChanged);
+            this.txtRateMozambique.TextChanged += new System.EventHandler(this.calculate);
             // 
             // txtRateFrance
             // 
@@ -263,7 +263,7 @@
             this.txtRateFrance.TabIndex = 8;
             this.txtRateFrance.Text = "1.18033";
             this.txtRateFrance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtRateFrance.TextChanged += new System.EventHandler(this.FranceTextChanged);
+            this.txtRateFrance.TextChanged += new System.EventHandler(this.calculate);
             // 
             // txtRateBrazil
             // 
@@ -273,7 +273,7 @@
             this.txtRateBrazil.TabIndex = 7;
             this.txtRateBrazil.Text = "0.189030";
             this.txtRateBrazil.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtRateBrazil.TextChanged += new System.EventHandler(this.BrazilTextChanged);
+            this.txtRateBrazil.TextChanged += new System.EventHandler(this.calculate);
             // 
             // txtRateAustralia
             // 
@@ -283,7 +283,7 @@
             this.txtRateAustralia.TabIndex = 6;
             this.txtRateAustralia.Text = "0.727701";
             this.txtRateAustralia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtRateAustralia.TextChanged += new System.EventHandler(this.AustraliaTextChanged);
+            this.txtRateAustralia.TextChanged += new System.EventHandler(this.calculate);
             // 
             // txtAmountMozambique
             // 
@@ -293,7 +293,7 @@
             this.txtAmountMozambique.TabIndex = 3;
             this.txtAmountMozambique.Text = "0.00";
             this.txtAmountMozambique.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtAmountMozambique.TextChanged += new System.EventHandler(this.MozambiqueTextChanged);
+            this.txtAmountMozambique.TextChanged += new System.EventHandler(this.calculate);
             // 
             // txtAmountFrance
             // 
@@ -303,7 +303,7 @@
             this.txtAmountFrance.TabIndex = 2;
             this.txtAmountFrance.Text = "0.00";
             this.txtAmountFrance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtAmountFrance.TextChanged += new System.EventHandler(this.FranceTextChanged);
+            this.txtAmountFrance.TextChanged += new System.EventHandler(this.calculate);
             // 
             // txtAmountBrazil
             // 
@@ -313,7 +313,7 @@
             this.txtAmountBrazil.TabIndex = 1;
             this.txtAmountBrazil.Text = "0.00";
             this.txtAmountBrazil.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtAmountBrazil.TextChanged += new System.EventHandler(this.BrazilTextChanged);
+            this.txtAmountBrazil.TextChanged += new System.EventHandler(this.calculate);
             // 
             // txtUSDTotal
             // 
