@@ -80,43 +80,76 @@ namespace _1730zanderson2d
             txt9Result.Text = "fail";
             txt10Result.Text = "fail";
 
+            txtResult1B.Text = "success";
+            txtResult2B.Text = "success";
+            txtResult3B.Text = "success";
+            txtResult4B.Text = "success";
+            txtResult5B.Text = "success";
+            txtResult6B.Text = "success";
+            txtResult7B.Text = "success";
+            txtResult8B.Text = "success";
+            txtResult9B.Text = "success";
+            txtResult10B.Text = "success";
+
+
+
             if (txtInput1.Text == "Frank")
                 txt1Result.Text = "success";
+            if (txtInput1.Text != "Frank")
+                txt1Result.Text = "fail";
 
             if (txtInput2.Text == "")
                 txt2Result.Text = "success";
+            if (txtInput2.Text != "")
+                txt2Result.Text = "fail";
 
             decimal val3 = Convert.ToDecimal(txtInput3.Text);
             if (val3 == 2.3m)
                 txt3Result.Text = "success";
+            if (val3 != 2.3m)
+                txt3Result.Text = "fail";
 
             bool val4 = Convert.ToBoolean(txtInput4.Text);
             if (val4 == false)
                 txt4Result.Text = "success";
+            if (val4 != false)
+                txt4Result.Text = "fail";
 
             if (txtInput5A.Text == txtInput5B.Text )
                 txt5Result.Text = "success";
+            if (txtInput5A.Text != txtInput5B.Text)
+                txt5Result.Text = "fail";
 
             if (txtInput6.Text != "Jones")
                 txt6Result.Text = "success";
+            if (txtInput6.Text == "Jones")
+                txt6Result.Text = "fail";
 
             decimal val7 = Convert.ToDecimal(txtInput7.Text);
             if (val7 > 0m )
                 txt7Result.Text = "success";
+            if (val7 <= 0m)
+                txt7Result.Text = "fail";
 
             decimal val8A = Convert.ToDecimal(txtInput8A.Text);
             decimal val8B = Convert.ToDecimal(txtInput8B.Text);
             if (val8A < val8B)
                 txt8Result.Text = "success";
+            if (val8A >= val8B)
+                txt8Result.Text = "fail";
 
             decimal val9 = Convert.ToDecimal(txtInput9.Text);
             if (val9 >= 500m )
                 txt9Result.Text = "success";
+            if (val9 < 500m)
+                txt9Result.Text = "fail";
 
             decimal val10A = Convert.ToDecimal(txtInput10A.Text);
             decimal val10B = Convert.ToDecimal(txtInput10B.Text);
             if (val10A <= val10B )
                 txt10Result.Text = "success";
+            if (val10A > val10B)
+                txt10Result.Text = "fail";
         }
     }
 

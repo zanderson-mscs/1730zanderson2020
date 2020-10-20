@@ -65,6 +65,16 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnSetPassValues = new System.Windows.Forms.Button();
             this.btnSetFailValues = new System.Windows.Forms.Button();
+            this.txtResult10B = new System.Windows.Forms.TextBox();
+            this.txtResult9B = new System.Windows.Forms.TextBox();
+            this.txtResult8B = new System.Windows.Forms.TextBox();
+            this.txtResult7B = new System.Windows.Forms.TextBox();
+            this.txtResult6B = new System.Windows.Forms.TextBox();
+            this.txtResult5B = new System.Windows.Forms.TextBox();
+            this.txtResult4B = new System.Windows.Forms.TextBox();
+            this.txtResult3B = new System.Windows.Forms.TextBox();
+            this.txtResult2B = new System.Windows.Forms.TextBox();
+            this.txtResult1B = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -382,11 +392,111 @@
             this.btnSetFailValues.UseVisualStyleBackColor = true;
             this.btnSetFailValues.Click += new System.EventHandler(this.btnSetFailValues_Click);
             // 
+            // txtResult10B
+            // 
+            this.txtResult10B.Location = new System.Drawing.Point(455, 320);
+            this.txtResult10B.Name = "txtResult10B";
+            this.txtResult10B.ReadOnly = true;
+            this.txtResult10B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult10B.TabIndex = 46;
+            this.txtResult10B.TabStop = false;
+            // 
+            // txtResult9B
+            // 
+            this.txtResult9B.Location = new System.Drawing.Point(455, 286);
+            this.txtResult9B.Name = "txtResult9B";
+            this.txtResult9B.ReadOnly = true;
+            this.txtResult9B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult9B.TabIndex = 45;
+            this.txtResult9B.TabStop = false;
+            // 
+            // txtResult8B
+            // 
+            this.txtResult8B.Location = new System.Drawing.Point(455, 255);
+            this.txtResult8B.Name = "txtResult8B";
+            this.txtResult8B.ReadOnly = true;
+            this.txtResult8B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult8B.TabIndex = 44;
+            this.txtResult8B.TabStop = false;
+            // 
+            // txtResult7B
+            // 
+            this.txtResult7B.Location = new System.Drawing.Point(455, 223);
+            this.txtResult7B.Name = "txtResult7B";
+            this.txtResult7B.ReadOnly = true;
+            this.txtResult7B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult7B.TabIndex = 43;
+            this.txtResult7B.TabStop = false;
+            // 
+            // txtResult6B
+            // 
+            this.txtResult6B.Location = new System.Drawing.Point(455, 190);
+            this.txtResult6B.Name = "txtResult6B";
+            this.txtResult6B.ReadOnly = true;
+            this.txtResult6B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult6B.TabIndex = 42;
+            this.txtResult6B.TabStop = false;
+            // 
+            // txtResult5B
+            // 
+            this.txtResult5B.Location = new System.Drawing.Point(455, 156);
+            this.txtResult5B.Name = "txtResult5B";
+            this.txtResult5B.ReadOnly = true;
+            this.txtResult5B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult5B.TabIndex = 41;
+            this.txtResult5B.TabStop = false;
+            // 
+            // txtResult4B
+            // 
+            this.txtResult4B.Location = new System.Drawing.Point(455, 121);
+            this.txtResult4B.Name = "txtResult4B";
+            this.txtResult4B.ReadOnly = true;
+            this.txtResult4B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult4B.TabIndex = 40;
+            this.txtResult4B.TabStop = false;
+            // 
+            // txtResult3B
+            // 
+            this.txtResult3B.Location = new System.Drawing.Point(455, 88);
+            this.txtResult3B.Name = "txtResult3B";
+            this.txtResult3B.ReadOnly = true;
+            this.txtResult3B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult3B.TabIndex = 39;
+            this.txtResult3B.TabStop = false;
+            // 
+            // txtResult2B
+            // 
+            this.txtResult2B.Location = new System.Drawing.Point(455, 58);
+            this.txtResult2B.Name = "txtResult2B";
+            this.txtResult2B.ReadOnly = true;
+            this.txtResult2B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult2B.TabIndex = 38;
+            this.txtResult2B.TabStop = false;
+            // 
+            // txtResult1B
+            // 
+            this.txtResult1B.Location = new System.Drawing.Point(455, 26);
+            this.txtResult1B.Name = "txtResult1B";
+            this.txtResult1B.ReadOnly = true;
+            this.txtResult1B.Size = new System.Drawing.Size(100, 22);
+            this.txtResult1B.TabIndex = 37;
+            this.txtResult1B.TabStop = false;
+            // 
             // frm2D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 417);
+            this.ClientSize = new System.Drawing.Size(591, 417);
+            this.Controls.Add(this.txtResult10B);
+            this.Controls.Add(this.txtResult9B);
+            this.Controls.Add(this.txtResult8B);
+            this.Controls.Add(this.txtResult7B);
+            this.Controls.Add(this.txtResult6B);
+            this.Controls.Add(this.txtResult5B);
+            this.Controls.Add(this.txtResult4B);
+            this.Controls.Add(this.txtResult3B);
+            this.Controls.Add(this.txtResult2B);
+            this.Controls.Add(this.txtResult1B);
             this.Controls.Add(this.btnSetFailValues);
             this.Controls.Add(this.btnSetPassValues);
             this.Controls.Add(this.btnCalculate);
@@ -425,6 +535,7 @@
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl1);
             this.Name = "frm2D";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "1730zanderson 2D";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -470,6 +581,16 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnSetPassValues;
         private System.Windows.Forms.Button btnSetFailValues;
+        private System.Windows.Forms.TextBox txtResult10B;
+        private System.Windows.Forms.TextBox txtResult9B;
+        private System.Windows.Forms.TextBox txtResult8B;
+        private System.Windows.Forms.TextBox txtResult7B;
+        private System.Windows.Forms.TextBox txtResult6B;
+        private System.Windows.Forms.TextBox txtResult5B;
+        private System.Windows.Forms.TextBox txtResult4B;
+        private System.Windows.Forms.TextBox txtResult3B;
+        private System.Windows.Forms.TextBox txtResult2B;
+        private System.Windows.Forms.TextBox txtResult1B;
     }
 }
 
