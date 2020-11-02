@@ -30,7 +30,7 @@ namespace _1730zanderson2020ex1b
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close
+            this.Close();
         }
     }
 }
