@@ -62,13 +62,13 @@ namespace _1730zanderson2e
 
         public static bool q11(bool member, decimal price, float weight)
         {
-            return member = true || price >= 25m || weight <= 1.0f ;
+            return member == true || price >= 25m || weight <= 1.0f ;
 
         }
 
         public static bool q12(bool member, decimal price, float weight)
         {
-            return member = true || price <= 25m && weight < 1.0f;
+            return member == true || price <= 25m && weight < 1.0f;
 
         }
 

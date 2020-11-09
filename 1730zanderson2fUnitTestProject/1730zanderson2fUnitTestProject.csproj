@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99874788-8DFB-4EEE-8452-2F3704F7EE5E}</ProjectGuid>
+    <ProjectGuid>{59F96A83-B346-43D0-8740-8AC85C921313}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_1730zanderson2eUnitTests</RootNamespace>
-    <AssemblyName>1730zanderson2eUnitTests</AssemblyName>
+    <RootNamespace>_1730zanderson2fUnitTestProject</RootNamespace>
+    <AssemblyName>1730zanderson2fUnitTestProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2eUnitTest.cs" />
+    <Compile Include="Ex2fUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\1730zanderson2e\1730zanderson2e.csproj">
-      <Project>{70c68ef2-f37c-43f8-8ddc-b68a0a13b657}</Project>
-      <Name>1730zanderson2e</Name>
+    <ProjectReference Include="..\1730zanderson2f\1730zanderson2f.csproj">
+      <Project>{c0e736fb-b602-4b8c-92b8-d7811cf93bda}</Project>
+      <Name>1730zanderson2f</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
