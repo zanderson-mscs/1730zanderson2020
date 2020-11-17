@@ -150,7 +150,7 @@ namespace _1730zanderson2gUnitTests
         [TestMethod]
         public void TestIf02R()
         {
-            Assert.AreEqual("0.2", Ex2gCalculations.If02("R"));
+            Assert.AreEqual("0.1", Ex2gCalculations.If02("R"));
         }
         [TestMethod]
         public void TestIf02C()
@@ -170,7 +170,7 @@ namespace _1730zanderson2gUnitTests
         [TestMethod]
         public void TestElseIf02R()
         {
-            Assert.AreEqual("0.2", Ex2gCalculations.ElseIf02("R"));
+            Assert.AreEqual("0.1", Ex2gCalculations.ElseIf02("R"));
         }
         [TestMethod]
         public void TestElseIf02C()
@@ -190,7 +190,7 @@ namespace _1730zanderson2gUnitTests
         [TestMethod]
         public void TestNestedIfElse02R()
         {
-            Assert.AreEqual("0.2", Ex2gCalculations.NestedIfElse02("R"));
+            Assert.AreEqual("0.1", Ex2gCalculations.NestedIfElse02("R"));
         }
         [TestMethod]
         public void TestNestedIfElse02C()

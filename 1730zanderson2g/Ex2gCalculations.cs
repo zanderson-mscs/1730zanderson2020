@@ -175,8 +175,10 @@ namespace _1730zanderson2g
 
             if (customerType == "R" )
                 discountPercent = .1m;
+           
             if (customerType == "C")
-                discountPercent = .1m;
+                discountPercent = .2m;
+           
             if (customerType == "T")
                 discountPercent = .4m;
             return discountPercent.ToString("0.0");
@@ -187,11 +189,14 @@ namespace _1730zanderson2g
         {
             //1c if else if
             decimal discountPercent = -1m;
+            
 
             if (customerType == "R")
                 discountPercent = .1m;
+            
             else if (customerType == "C")
-                discountPercent = .1m;
+                discountPercent = .2m;
+            
             else if (customerType == "T")
                 discountPercent = .4m;
             return discountPercent.ToString("0.0");
@@ -211,7 +216,7 @@ namespace _1730zanderson2g
             {
                 if (customerType == "C")
                 {
-                    discountPercent = .1m;
+                    discountPercent = .2m;
                 }
                 else
                 {
