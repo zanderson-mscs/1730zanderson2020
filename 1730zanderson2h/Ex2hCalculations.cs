@@ -100,7 +100,7 @@ namespace _1730zanderson2h
                
             
             return result;
-
+        }
 
             //String
              public static string StringCalc01(string a);
@@ -168,7 +168,56 @@ namespace _1730zanderson2h
         {
            result = "Invalid input";
            try{
-                    if (a.Length())
+                    a = a.Replace("(", "");
+                    a = a.Replace(")", "");
+                    a = a.Replace("-", "");
+                    if (a.Length(10))
+                        a.Insert(3, ".");
+                        a.Insert(7, ".");
+                    else
+                        a.Insert(3, ".");
+              }
+               catch { }
+
+            return result;
+        }
+             public static string StringCalc07(string a);
+        {
+           result = "Invalid input";
+           try{
+                a = a.ToLower();
+                  if(a.Contains("pioneer") )
+                    result = "Found";
+                  else if (a.Contains("pioneer") != true )         //Does not contain
+                    result = "Not found";
+              }
+               catch { }
+
+            return result;
+        }
+
+             public static string StringCalc08(string a);
+        {
+           result = "Invalid input";
+           try{
+                 int aIndex = a.IndexOf(",") + 1;
+                 a = a.Substring(aIndex)
+
+                 result = a;
+              }
+               catch { }
+
+            return result;
+        }
+
+            public static string StringCalc09(string a);
+        {
+           result = "Invalid input";
+           try{
+                 int aLastIndex = a.LastIndexOf(" ") + 1;
+                 a = a.Substring(aLastIndex)
+
+                 result = a;
               }
                catch { }
 
@@ -178,7 +227,10 @@ namespace _1730zanderson2h
              public static string StringCalc10(string s1, string s2, string s3)
         {
                 StringBuilder sb = new StringBuilder(100);
-                return "";
+                sb.Append(s1);
+                sb.Append(s2);
+                sb.Append(s3);
+                return sb.ToString();
         }
 
         }
