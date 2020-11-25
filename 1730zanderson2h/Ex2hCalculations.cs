@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Text;
 
 namespace _1730zanderson2h
 {
@@ -99,6 +100,86 @@ namespace _1730zanderson2h
                
             
             return result;
+
+
+            //String
+             public static string StringCalc01(string a);
+        {
+           result = "Invalid input";
+           try{
+                    a = a.Remove(0, 1);
+                    a = a.Insert(0, "cr");
+                    result = a;
+              }
+               catch { }
+
+            return result;
+        }
+                public static string StringCalc02(string a);
+        {
+           result = "Invalid input";
+           try{
+                    a = a.Remove(0, );
+                    a = a.Insert(0, "rit");
+                    result = a;
+              }
+               catch { }
+
+            return result;
+        }
+                   public static string StringCalc03(string a);
+        {
+           result = "Invalid input";
+           try{
+                    a = a.Substring(0, 2).ToUpper;
+                    result = a;
+              }
+               catch { }
+
+            return result;
+        }
+
+            public static string StringCalc04(string a);
+        {
+           result = "Invalid input";
+           try{
+                    a = a.PadLeft(10, *);           //ten characters, pad with star. Didn't show up with any hints so I'm just guessing by what you said
+                    result = a;
+              }
+               catch { }
+
+            return result;
+        }
+
+           public static string StringCalc05(string a);
+        {
+           result = "Invalid input";
+           try{
+                    a = a.Replace("(", "");
+                    a = a.Replace(")", "");
+                    a = a.Replace("-", "");
+                    result = a;
+              }
+               catch { }
+
+            return result;
+        }
+              public static string StringCalc06(string a);
+        {
+           result = "Invalid input";
+           try{
+                    if (a.Length())
+              }
+               catch { }
+
+            return result;
+        }
+
+             public static string StringCalc10(string s1, string s2, string s3)
+        {
+                StringBuilder sb = new StringBuilder(100);
+                return "";
+        }
 
         }
     }

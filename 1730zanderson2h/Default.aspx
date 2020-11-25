@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_1730zanderson2h._Default" %>
 
+<script runat="server">
+
+   
+</script>
+
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
    
@@ -60,35 +66,47 @@
         <div class="col-md-6">
             <h2>String Methods</h2>
              <div class="form-group" id="btnDateCalc">
-                <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="TextBox10" runat="server" Text="1) Remove/Insert"></asp:Label>
                 <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                 <asp:TextBox ID="TextBox11Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class = "form-group">
-                <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label12" runat="server" Text="2) Remove/Insert"></asp:Label>
                 <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox12Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label13" runat="server" Text="3) Substring/ToUpper"></asp:Label>
                 <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox13Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label14" runat="server" Text="4) Pad Left"></asp:Label>
                 <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox14Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label15" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label15" runat="server" Text="5) Replace"></asp:Label>
                 <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox15Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label16" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label16" runat="server" Text="6) Replace/Length/Insert"></asp:Label>
                 <asp:TextBox ID="TextBox16" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox16Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label17" runat="server" Text="7) ToLower/Contains"></asp:Label>
                 <asp:TextBox ID="TextBox17" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox17Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label18" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label18" runat="server" Text="8) IndexOf/Substring"></asp:Label>
                 <asp:TextBox ID="TextBox18" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox18Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label19" runat="server" Text="Label"></asp:Label>
+                <asp:Label ID="Label19" runat="server" Text="9) LastIndexOf/Substring"></asp:Label>
                 <asp:TextBox ID="TextBox19" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBox19Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class="form-group">
-                <asp:Label ID="Label20" runat="server" Text="Label"></asp:Label>
-                <asp:TextBox ID="TextBox20" runat="server"></asp:TextBox>
+                <asp:Label ID="Label20" runat="server" Text="10) StringBuilder.append"></asp:Label>
+                &nbsp;<asp:Label ID="Label20Result" runat="server" Text="[Label 20 Result]"></asp:Label>
+                <br />
+                <br />
+                <asp:Button ID="StringCalculationsButton" runat="server" OnClick="StringCalculationsButton_Click" Text="String Calculations" />
             </div>
         </div>
        

@@ -31,5 +31,12 @@ namespace _1730zanderson2h
             TextBox9Result.Text = Ex2hCalculations.DateCalc09(TextBox9a.Text, TextBox9b.Text);
             TextBox10Result.Text = Ex2hCalculations.DateCalc10(TextBox10a.Text, TextBox10b.Text);
         }
+
+         protected void StringCalculationsButton_Click(object sender, EventArgs e)
+    {
+            TextBox11Result.Text = Ex2hCalculations.StringCalc01(TextBox11.Text);
     }
+
+    }
+
 }
