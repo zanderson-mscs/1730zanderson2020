@@ -68,7 +68,7 @@
              <div class="form-group" id="btnDateCalc">
                 <asp:Label ID="TextBox10" runat="server" Text="1) Remove/Insert"></asp:Label>
                 <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
-                 <asp:TextBox ID="TextBox11Result" runat="server" Enabled="False"></asp:TextBox>
+                <asp:TextBox ID="TextBox11Result" runat="server" Enabled="False"></asp:TextBox>
             </div> <div class = "form-group">
                 <asp:Label ID="Label12" runat="server" Text="2) Remove/Insert"></asp:Label>
                 <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>

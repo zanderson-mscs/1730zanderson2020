@@ -103,9 +103,9 @@ namespace _1730zanderson2h
         }
 
             //String
-             public static string StringCalc01(string a);
+             public static string StringCalc01(string a)
         {
-           result = "Invalid input";
+           string result = "Invalid input";
            try{
                     a = a.Remove(0, 1);
                     a = a.Insert(0, "cr");
@@ -115,11 +115,11 @@ namespace _1730zanderson2h
 
             return result;
         }
-                public static string StringCalc02(string a);
+                public static string StringCalc02(string a)
         {
-           result = "Invalid input";
+          string result = "Invalid input";
            try{
-                    a = a.Remove(0, );
+                    a = a.Remove(0, 1);
                     a = a.Insert(0, "rit");
                     result = a;
               }
@@ -127,11 +127,11 @@ namespace _1730zanderson2h
 
             return result;
         }
-                   public static string StringCalc03(string a);
+                   public static string StringCalc03(string a)
         {
-           result = "Invalid input";
+          string result = "Invalid input";
            try{
-                    a = a.Substring(0, 2).ToUpper;
+                    a = a.Substring(0, 2).ToUpper();
                     result = a;
               }
                catch { }
@@ -139,11 +139,11 @@ namespace _1730zanderson2h
             return result;
         }
 
-            public static string StringCalc04(string a);
+            public static string StringCalc04(string a)
         {
-           result = "Invalid input";
+          string result = "Invalid input";
            try{
-                    a = a.PadLeft(10, *);           //ten characters, pad with star. Didn't show up with any hints so I'm just guessing by what you said
+                    a = a.PadLeft(10);           //ten characters, pad with star. Didn't show up with any hints so I'm just guessing by what you said
                     result = a;
               }
                catch { }
@@ -151,9 +151,9 @@ namespace _1730zanderson2h
             return result;
         }
 
-           public static string StringCalc05(string a);
+           public static string StringCalc05(string a)
         {
-           result = "Invalid input";
+          string result = "Invalid input";
            try{
                     a = a.Replace("(", "");
                     a = a.Replace(")", "");
@@ -164,9 +164,9 @@ namespace _1730zanderson2h
 
             return result;
         }
-              public static string StringCalc06(string a);
+              public static string StringCalc06(string a)
         {
-           result = "Invalid input";
+          string result = "Invalid input";
            try{
                     a = a.Replace("(", "");
                     a = a.Replace(")", "");
@@ -181,9 +181,9 @@ namespace _1730zanderson2h
 
             return result;
         }
-             public static string StringCalc07(string a);
+             public static string StringCalc07(string a)
         {
-           result = "Invalid input";
+        string result = "Invalid input";
            try{
                 a = a.ToLower();
                   if(a.Contains("pioneer") )
@@ -196,12 +196,12 @@ namespace _1730zanderson2h
             return result;
         }
 
-             public static string StringCalc08(string a);
+             public static string StringCalc08(string a)
         {
-           result = "Invalid input";
+          string result = "Invalid input";
            try{
                  int aIndex = a.IndexOf(",") + 1;
-                 a = a.Substring(aIndex)
+                a = a.Substring(aIndex);
 
                  result = a;
               }
@@ -210,12 +210,12 @@ namespace _1730zanderson2h
             return result;
         }
 
-            public static string StringCalc09(string a);
+            public static string StringCalc09(string a)
         {
-           result = "Invalid input";
+         string  result = "Invalid input";
            try{
                  int aLastIndex = a.LastIndexOf(" ") + 1;
-                 a = a.Substring(aLastIndex)
+                a = a.Substring(aLastIndex);
 
                  result = a;
               }
