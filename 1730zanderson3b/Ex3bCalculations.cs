@@ -67,9 +67,9 @@ namespace _1730zanderson3b
         }
 
         //5 Celcius to Fahrenheit
-        public static void CelciusToFahrenheit(double input, out double fahrenheit)
+        public static void CelciusToFahrenheit(double celcius, out double fahrenheit)
         {
-            fahrenheit = (input * 9 / 5) - 32;
+            fahrenheit = (celcius * 9 / 5) - 32;
         }
 
         // 6 Gross Pay

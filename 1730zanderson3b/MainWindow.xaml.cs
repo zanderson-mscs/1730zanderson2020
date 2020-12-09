@@ -92,27 +92,26 @@ namespace _1730zanderson3b
             }
 
 
-            //4
+            //4 F to C
             try
             {
-                double subtotal = Double.Parse(this.inputTextBox4.Text);
-                double celcius = Ex3bCalculations.GetDiscountPercent(subtotal);
+                double input = Double.Parse(this.inputTextBox4.Text);
+                double celcius = Ex3bCalculations.FahrenheitToCelsius(input);
                 resultTextBox4.Text = celcius.ToString("f1");
             }
             catch
             {
                 resultTextBox4.Text = "";
                 MessageBox.Show("Invalid input: \n"
-                    + this.inputTextBox4.Text + "\n");
+                    + this.inputTextBox4.Text);
             }
 
             //5
             try
             {
-                double input = Double.Parse(this.inputTextBox5a.Text);
-                double celcius = 0;
-                Ex3bCalculations.CelciusToFahrenheit(input, out double fahrenheit);
-                resultTextBox1.Text = celcius.ToString("f3");
+                double celcius = Double.Parse(this.inputTextBox5a.Text);
+                Ex3bCalculations.CelciusToFahrenheit(celcius, out double fahrenheit);
+                resultTextBox1.Text = fahrenheit.ToString("f3");
             }
             catch
             {
