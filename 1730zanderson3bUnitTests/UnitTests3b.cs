@@ -45,20 +45,20 @@ namespace _1730zanderson3bUnitTests
             Assert.AreEqual(2892.37m,
                 Decimal.Round(Ex3bCalculations.CalculateFutureValue(20m, 0.003m, 120), 2));
         }
-        //[TestMethod]
-        //public void CalcFutureValue_Ref_12Mo100US()
-        //{
-        //    decimal futureValue = 0m;
-        //    Ex3bCalculations.CalculateFutureValue(100m, 0.004m, 12, ref futureValue);
-        //    Assert.AreEqual(1231.66m, Decimal.Round(futureValue, 2));
-        //}
-        //[TestMethod]
-        //public void CalcFutureValue_Ref_120Mo20US()
-        //{
-        //    decimal futureValue = 0m;
-        //    Ex3bCalculations.CalculateFutureValue(20m, 0.003m, 120, ref futureValue);
-        //    Assert.AreEqual(2892.37m, Decimal.Round(futureValue, 2));
-        //}
+        [TestMethod]
+        public void CalcFutureValue_Ref_12Mo100US()
+        {
+            decimal futureValue = 0m;
+            Ex3bCalculations.CalculateFutureValue(100m, 0.004m, 12, ref futureValue);
+            Assert.AreEqual(1231.66m, Decimal.Round(futureValue, 2));
+        }
+        [TestMethod]
+        public void CalcFutureValue_Ref_120Mo20US()
+        {
+            decimal futureValue = 0m;
+            Ex3bCalculations.CalculateFutureValue(20m, 0.003m, 120, ref futureValue);
+            Assert.AreEqual(2892.37m, Decimal.Round(futureValue, 2));
+        }
         [TestMethod]
         public void FahrenheitToCelsius212()
         {
@@ -75,7 +75,7 @@ namespace _1730zanderson3bUnitTests
         //public void CelsiusToFahrenheit0()
         //{
         //    double fahrenheit = 0.0;
-        //    Ex3bCalculations.CelsiusToFahrenheit(0, out fahrenheit);
+        //    Ex3bCalculations.CelsiusToFahrenheit(0.0, out fahrenheit);
         //    Assert.AreEqual(32.0, Math.Round(fahrenheit, 1));
         //}
         //[TestMethod]
@@ -103,11 +103,11 @@ namespace _1730zanderson3bUnitTests
             Assert.AreEqual(10m,
                 Decimal.Round(Ex3bCalculations.TotalHours("1.1 2.2 3.3 3.4 "), 2));
         }
-        //[TestMethod]
-        //public void GrossPay_String_10()
-        //{
-        //    Assert.AreEqual(100m,
-        //        Decimal.Round(Ex3bCalculations.GrossPay("1.1 2.2 3.3 3.4 ", 10m), 2));
-        //}
+        [TestMethod]
+        public void GrossPay_String_10()
+        {
+            Assert.AreEqual(100m,
+                Decimal.Round(Ex3bCalculations.GrossPay("1.1 2.2 3.3 3.4 ", 10m), 2));
+        }
     }
 }

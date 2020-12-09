@@ -22,6 +22,16 @@ namespace _1730zanderson3b
             return discountPercent;
         }
 
+        //1
+        public static void GetDiscountPercent(decimal subtotal, out decimal discountPercent)
+        {
+            if (subtotal >= 500m)
+                discountPercent = .2m;
+            else
+                discountPercent = .1m;
+
+        }
+
         //2
         public static decimal CalculateFutureValue(decimal monthlyInvestment, decimal monthlyInterestRate, int months)
         {
@@ -33,6 +43,16 @@ namespace _1730zanderson3b
             return futureValue;
         }
 
+        //3
+        public static void CalculateFutureValue(decimal monthlyInvestment, decimal monthlyInterestRate, int months, ref decimal futureValue)
+        {
+            
+            for (int i = 0; i < months; i++)
+            {
+                futureValue = (futureValue + monthlyInvestment) * (1 + monthlyInterestRate);
+            }
+            
+        }
         //4
         public static double FahrenheitToCelsius(double input)
         {
@@ -46,7 +66,13 @@ namespace _1730zanderson3b
             return celcius;
         }
 
-        // Gross Pay
+        //5 Celcius to Fahrenheit
+        public static void CelciusToFahrenheit(double input, out double fahrenheit)
+        {
+            fahrenheit = (input * 9 / 5) - 32;
+        }
+
+        // 6 Gross Pay
         public static decimal GrossPay(decimal hours, decimal rate)
         {
             decimal result = 0;

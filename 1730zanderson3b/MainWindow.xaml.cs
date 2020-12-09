@@ -27,6 +27,7 @@ namespace _1730zanderson3b
 
         private void calcButton_Click(object sender, RoutedEventArgs e)
         {
+            //0
             try
             {
                 decimal subtotal = Decimal.Parse(this.inputTextBox0a.Text);
@@ -39,6 +40,21 @@ namespace _1730zanderson3b
                 MessageBox.Show("Invalid inuput: " + this.inputTextBox0a.Text);
             }
 
+            //1 Calculate discountPercent using output argument
+            try
+            {
+                decimal subtotal = Decimal.Parse(this.inputTextBox0a.Text);
+                decimal discountPercent;
+                Ex3bCalculations.GetDiscountPercent(subtotal, out discountPercent);
+                resultTextBox1.Text = discountPercent.ToString("f3");
+            }
+            catch
+            {
+                resultTextBox1.Text = "";
+                MessageBox.Show("Invalid inuput: " + this.inputTextBox1a.Text);
+            }
+
+            //2
             try
             {
                 int months = Int32.Parse(this.inputTextBox2a.Text);
@@ -56,6 +72,26 @@ namespace _1730zanderson3b
                     + this.inputTextBox2c.Text + "\n" );
             }
 
+            //3 Calculate futureValue using ref argument
+            try
+            {
+                int months = Int32.Parse(this.inputTextBox2a.Text);
+                decimal monthlyInvestment = Decimal.Parse(this.inputTextBox2b.Text);
+                decimal monthlyInterestRate = Decimal.Parse(this.inputTextBox2c.Text);
+                decimal futureValue = 0;
+                    Ex3bCalculations.CalculateFutureValue(monthlyInvestment, monthlyInterestRate, months, ref futureValue);
+                resultTextBox2.Text = futureValue.ToString("c2");
+            }
+            catch
+            {
+                resultTextBox2.Text = "";
+                MessageBox.Show("Invalid input: \n"
+                    + this.inputTextBox2a.Text + "\n"
+                    + this.inputTextBox2b.Text + "\n"
+                    + this.inputTextBox2c.Text + "\n");
+            }
+
+
             //4
             try
             {
@@ -68,6 +104,20 @@ namespace _1730zanderson3b
                 resultTextBox4.Text = "";
                 MessageBox.Show("Invalid input: \n"
                     + this.inputTextBox4.Text + "\n");
+            }
+
+            //5
+            try
+            {
+                double input = Double.Parse(this.inputTextBox5a.Text);
+                double celcius = 0;
+                Ex3bCalculations.CelciusToFahrenheit(input, out double fahrenheit);
+                resultTextBox1.Text = celcius.ToString("f3");
+            }
+            catch
+            {
+                resultTextBox1.Text = "";
+                MessageBox.Show("Invalid inuput: " + this.inputTextBox1a.Text);
             }
 
             //6
