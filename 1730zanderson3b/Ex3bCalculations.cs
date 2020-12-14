@@ -57,10 +57,9 @@ namespace _1730zanderson3b
         public static double FahrenheitToCelsius(double input)
         {
             double celcius = 0;
-           
 
-            celcius = input - 32 * (5 / 9);
 
+            celcius = (input - 32) * (5.0 / 9.0);
 
 
             return celcius;
