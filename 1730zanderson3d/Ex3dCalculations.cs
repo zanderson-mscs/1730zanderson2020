@@ -10,32 +10,55 @@ namespace _1730zanderson3d
     {
         public static string ArrayToString(int[] values)
         {
-            // Create StringBuilder object: sbResult
-            // loop
-            //     convert current value to string, append to sbResult
-            //     append ", " to sbResult
-            // convert sbResult to string: result
-            // remove last ", " from result
-            // return result
-            return "";
+            StringBuilder sbResult = new StringBuilder(200);
+            string result = "Invalid input";
+            int i = 0;
+            foreach (int value in values)
+            {
+                sbResult.Append(values[i]); //     convert current value to string, append to sbResult
+                sbResult.Append(", ");
+
+                result = sbResult.ToString();
+                i++;
+            }
+            result = sbResult.ToString();
+            return result.Remove(result.LastIndexOf(", "));
+
+            
         }
 
         public static int ValueCount(int[] values, int searchValue)
         {
-            // create counter variable
-            // loop
-            //     increment counter if current value equals searchValue
-            // return counter
-            return 0;
+            int count = 0;
+            int i = 0;
+            foreach (int value in values)
+            {
+                if (values[i] == searchValue)
+                    count += 1;
+                else
+                    count += 0;
+
+                i++;
+            }
+            return count;
         }
 
         public static int RangeCount(int[] values, int searchMin, int searchMax)
         {
-            // create counter variable
-            // loop
-            //     increment counter if current value between min and max (inclusive)
-            // return counter
-            return 0;
+            int count = 0;
+            int i = 0;
+            foreach (int value in values)
+            {
+                if (values[i] >= searchMin && values[i] <= searchMax)
+                {
+                    count += 1;
+                }
+                else count += 0;
+
+                i++;
+            }
+        
+            return count;
         }
     }
 }

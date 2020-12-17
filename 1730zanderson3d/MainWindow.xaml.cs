@@ -20,7 +20,7 @@ namespace _1730zanderson3d
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int[] values = {300, 500, 200, 150, 600, 750, 900, 150, 100, 200,
+        public int[] values = {300, 500, 200, 150, 600, 750, 900, 150, 100, 200,
             250, 650, 300, 750, 800, 350, 250, 150, 100, 300};
 
         public MainWindow()
@@ -29,15 +29,39 @@ namespace _1730zanderson3d
         }
         private void searchValuesComboBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            valueCountTextBox.Text = "Test";
+            valueCountTextBox.Text = "";
+            try
+            {
+                valueCountTextBox.Text = (Ex3dCalculations.ValueCount(values, Convert.ToInt32(searchValuesComboBox.Text))).ToString();
+            }
+            catch
+            {
+
+            }
         }
-        private void searchRangeComboBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void searchRangesComboBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             int dashIndex = this.searchRangesComboBox.Text.IndexOf('-');
             string strSearchMin = this.searchRangesComboBox.Text.Substring(0, dashIndex).Trim();
             string strSearchMax = this.searchRangesComboBox.Text.Substring(dashIndex + 1).Trim();
-            rangeCountTextBox.Text = "Test";
+            rangeCountTextBox.Text = "";
+            try
+            {
+                int Min = Int32.Parse(strSearchMin);
+                int Max = Int32.Parse(strSearchMax);
+
+                rangeCountTextBox.Text = ( (Ex3dCalculations.RangeCount(values, Min, Max)) ).ToString(); 
+            }
+            catch
+            {
+
+            }
         }
 
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.valuesTextBox.Text = Ex3dCalculations.ArrayToString(this.values);
+        }
     }
 }
