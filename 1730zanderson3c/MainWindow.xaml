@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1730zanderson3c"
         mc:Ignorable="d"
-        Title="comc1730 Ex3c Arrays, totals, obj args, ListBox" Height="530" Width="703" Loaded="Window_Loaded">
-    <Grid Loaded="Grid_Loaded">
+        Title="comc1730 Ex3c Arrays, totals, obj args, ListBox" Height="531.677" Width="718.38" Loaded="Window_Loaded">
+    <Grid>
         <Grid HorizontalAlignment="Left" Height="450" Margin="42,31,0,0" VerticalAlignment="Top" Width="615">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>

@@ -35,7 +35,7 @@ namespace _1730zanderson3c
             }
             catch
             {
-                resultTextBox0.Text = "Invalid input";
+                resultTextBox0.Text = "Invalid index";
                 this.inputTextBox0a.Focus();
             }
 
@@ -61,7 +61,7 @@ namespace _1730zanderson3c
             try
             {
                 resultTextBox3.Text = "";
-                int count = Int32.Parse(inputTextBox3a.Text);
+                count = Int32.Parse(inputTextBox3a.Text);
             }
             catch
             {
@@ -72,8 +72,8 @@ namespace _1730zanderson3c
             //4
             double[] numbers4 = new double[inputListBox4a.Items.Count];
             
-            for (int i = 0; i <count; i++)
-            numbers4[count] = Double.Parse(inputListBox4a.Items[count].ToString());
+            for (int i = 0; i < inputListBox4a.Items.Count; i++)
+            numbers4[i] = Double.Parse(inputListBox4a.Items.GetItemAt(i).ToString());
 
             resultTextBox4.Text = Ex3cCalculations.Calc3(numbers4, count).ToString();
 
@@ -90,13 +90,13 @@ namespace _1730zanderson3c
             {
                 numbers6[i] = Double.Parse(inputListBox6a.Items.GetItemAt(i).ToString());
             }
-            double[] AboveAvg = Ex3cCalculations.Calc6(numbers6);
+            double[] aboveAvg = Ex3cCalculations.Calc6(numbers6);
 
-            foreach (int number in AboveAvg)
+            foreach (int number in aboveAvg)
             {
                 int i = 0;
                 i = numbers6.GetLength(0);
-                resultListBox6.Items.Add(AboveAvg[i]);
+                resultListBox6.Items.Add(aboveAvg[i]);
             }
 
         }
@@ -143,6 +143,16 @@ namespace _1730zanderson3c
         private void inputTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
             ((TextBox)sender).SelectAll();
+        }
+
+        private void searchRangesComboBox_TextChanged(object sender)
+        {
+
+        }
+
+        private void inputTextBox4a_GotFocus(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
