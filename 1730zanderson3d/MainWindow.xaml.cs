@@ -41,12 +41,15 @@ namespace _1730zanderson3d
         }
         private void searchRangesComboBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            int dashIndex = this.searchRangesComboBox.Text.IndexOf('-');
-            string strSearchMin = this.searchRangesComboBox.Text.Substring(0, dashIndex).Trim();
-            string strSearchMax = this.searchRangesComboBox.Text.Substring(dashIndex + 1).Trim();
-            rangeCountTextBox.Text = "";
             try
             {
+
+                int dashIndex = this.searchRangesComboBox.Text.IndexOf('-');
+                string strSearchMin = this.searchRangesComboBox.Text.Substring(0, dashIndex).Trim();
+                string strSearchMax = this.searchRangesComboBox.Text.Substring(dashIndex + 1).Trim();
+                rangeCountTextBox.Text = "";
+          
+         
                 int Min = Int32.Parse(strSearchMin);
                 int Max = Int32.Parse(strSearchMax);
 
@@ -54,7 +57,7 @@ namespace _1730zanderson3d
             }
             catch
             {
-
+                rangeCountTextBox.Text = "-1";
             }
         }
 
